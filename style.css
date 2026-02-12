@@ -1,0 +1,491 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    background-color: black;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  .main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+@media(max-width:580px){
+  .sidebar{
+      display: none;
+  }
+}
+
+.music-player {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    height: 72px;
+    
+  }
+
+  .main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+  }
+
+  .sidebar {
+    background-color: #000;
+    width: 310px;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .nav-option {
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .nav-option:hover{
+    opacity: 1;
+  }
+  
+  .nav-option i{
+    font-size: 1.25rem;
+  }
+  
+  .nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .lib-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+  
+  .icons{
+    font-size: 1.25rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+    display: flex;
+  }
+  
+  .icons i{
+    opacity: 0.7;
+    margin-right: 1rem;
+  }
+  
+  .icons i:hover {
+    opacity: 1;
+  }
+  
+  .box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+  }
+  .box-p1{
+    background-color: #232323;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 1.5rem;
+    
+  }
+  
+  .box-p2{
+    background-color: #232323;
+    font-size: 0.85rem;
+    opacity: 0.9 ;
+    height: 1.5rem;
+  }
+  
+  .badge{
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 6.25rem;
+    padding: 0.25rem 1rem;
+    font-weight: 800;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+    font-size: 0.8rem;
+  }
+  
+  .dark-badge{
+    background-color: #000;
+    color: #fff;
+    font-size: 0.8rem;
+  }
+  .dark-badge:hover{
+    background-color: #fff;
+    color: #121212;
+  }
+  .dark-icon{
+    padding: 0.1rem;
+    font-size: 1rem;
+  }
+  
+  .sticky-nav{
+    position: sticky;
+    top:0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+  }
+  
+  .sticky-nav-icons {
+    margin-left: 0.75rem;
+  }
+  
+  .sticky-nav-options{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item{
+    margin-right: 1rem;
+  }
+  
+  @media (max-width:1000px) {
+    .hide{
+      display: none;
+    }
+  }
+  h2:hover{
+    text-decoration: underline;
+  }
+  .card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  .cards-container{
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  
+  .card-title{
+    background-color: #232323;
+    font-weight: 600;
+    height: 2rem;
+  }
+  
+  .card-info{
+    background-color: #232323;
+    font-size: 0.85rem;
+    opacity: 0.7;
+  }
+  
+  .up-footer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .line{
+    height: 30%;
+    width: 90%;
+    border-top: 0.5px solid;
+    opacity: 0.4;
+  }
+
+  .footer{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 9rem ;
+    padding-bottom: 3rem;
+    
+  }
+  .span{
+    justify-content: space-between;
+    padding-right: 0.5rem;
+    display: flex;
+  }
+
+  .point{
+    justify-content: space-between;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    opacity: 0.5;
+  }
+  .point:hover{
+    opacity: 0.8;
+  }
+  
+  .copy-right{
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.6rem;
+    font-size: 0.9rem;
+  }
+  .copyright{
+    padding: 0.3rem;
+    opacity: 0.5;
+    padding-top: 1.3rem;
+    font-size: 1rem;
+    
+  }
+  .copyright:hover{
+    opacity: 0.8;
+  }
+
+  .copy{
+    padding: 0.5rem;
+    opacity: 0.5;
+  }
+
+  .copy:hover{
+    opacity: 0.8;
+  }
+  .music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .album{
+    width: 25%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0.5rem;
+  }
+
+  .album-img{
+    width: 56px;
+    height: 56px;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .album-text{
+    flex-wrap: nowrap;
+    margin-right: 1rem;
+    padding: 0.7rem;
+  }
+
+  .album-text>.title{
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 0.6rem;
+  }
+  .album-text>.title:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .album-text>.artist{
+    font-size: 0.7rem;
+    opacity: 0.7;
+    line-height: 0.1rem;
+  }
+  .album-text>.artist:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .fa-solid{
+    font-weight: 900;
+  }
+
+  .album-icon{
+    opacity: 0.7;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .album-icon:hover{
+    opacity: 1;
+  }
+
+    
+  .player{
+    width: 50%;
+  }
+  .controls{
+    width: 25%; 
+  }
+
+  .controls-options{
+    display: flex;
+    align-items: center;
+    padding-right: 0.9rem;
+    margin-left: 0.3rem;
+  }
+
+.controls-options i{
+    height: 1rem;
+    margin-right: 0.5rem;
+    opacity: 0.7;
+    padding-left: 0.3rem;
+}
+.controls-options i:hover{
+  opacity: 1;
+}
+
+.player-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+ .playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    justify-content: space-around;
+    padding: 0.5rem;
+ }
+  
+ .progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.25rem;
+ }
+
+  .progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: #1bd760;
+    margin-top: -6px;
+ } 
+
+ 
+  .player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+  }
+
+  .player-control-icon:hover{
+    opacity: 1;
+  }
+
+  .info-content{
+    align-items: center;
+    width: 150px;
+    padding: 0.6rem;
+    margin-left: 0.7rem;
+    margin-top: 2.5rem;
+    font-size: 1rem;
+  }
+  .content{
+    opacity: 0.5;
+    line-height: 1rem;
+  }
+
+  .content:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+
+  .info{
+    display: flex;
+    width: 100%;
+  }
+
+  
+  
+
+  .social{
+    margin-left: 1.5rem;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    justify-content: space-between;
+    
+  }
+  .social-icon{
+    justify-content: space-between;
+    background-color: #232323;
+    border-radius: 50%;
+    padding: 0.7rem;
+    font-size: 1.3rem;
+  }
+  .social-icon:hover{
+    background-color: #403f3f;
+    animation-duration: 3sec;
+  }
+
+  @media(max-width:580px){
+    .music-player>.album.player.controls{
+        display: none;
+    }
+}
+
+@media(max-width:480px){
+  .music-player>.album{
+      display: none;
+  }
+}
+
+@media(max-width:400px){
+  .music-player>.controls{
+      display: none;
+  }
+  .music-player>.player{
+    width: 100%;
+  }
+}
